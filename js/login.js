@@ -4,7 +4,7 @@ function default_1(dbUser, formInfo) {
     if (formInfo.username === dbUser.username) {
         if (formInfo.password === dbUser.password) {
             localStorage.setItem('username', formInfo.username);
-            //loggedIn();
+            loggedIn();
         }
         else {
             return;
