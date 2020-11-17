@@ -1,4 +1,4 @@
-class User{
+export class User{
     constructor(private _username:string, private _password:string){
 
     }
@@ -26,6 +26,6 @@ let user1 = new User('Ana','Laura');
 
 users.push(user1);
 
-export function getUserts(){
+export function getUsers(){
     return users;
 }

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getUserts = void 0;
+exports.getUsers = exports.User = void 0;
 var User = /** @class */ (function () {
     function User(_username, _password) {
         this._username = _username;
@@ -28,10 +28,11 @@ var User = /** @class */ (function () {
     });
     return User;
 }());
+exports.User = User;
 var users = [];
 var user1 = new User('Ana', 'Laura');
 users.push(user1);
-function getUserts() {
+function getUsers() {
     return users;
 }
-exports.getUserts = getUserts;
+exports.getUsers = getUsers;
