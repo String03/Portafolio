@@ -1,1 +1,3 @@
-console.log('hola');
+import {getUsers} from './users';
+
+console.log(getUsers());
