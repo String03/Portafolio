@@ -81,4 +81,51 @@ main{
         background-repeat: no-repeat;
         background-position: center;
     }
+    .gallery-section{
+        padding: 81px 0;
+    }
+
+    .section-title{
+        font-size: 25px;
+        font-weight: 600;
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 12px;
+        margin-bottom: 50px;
+        text-align: center;
+
+        aside{
+            margin-bottom:  30px;
+            .widget{
+                border:  1px solid $color-border;
+                margin-bottom: 30px;
+
+                .widget-title{
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    padding: 12px 20px;
+                    text-align: center;
+                    border-bottom: 1px solid $color-border;
+                }
+
+                .widget-content{
+                    padding: 20px;
+                }
+            }
+        }
+
+        &::after{
+            content   : '';
+            position  : absolute;
+            display   : block;
+            height    : 1px;
+            width     : 40px;
+            background: $primary;
+            left      : 50%;
+            top       : 0;
+            transform : translateX(-50%);
+        }
+
+
+    }
 }
