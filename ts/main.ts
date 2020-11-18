@@ -1,7 +1,10 @@
 import {getUsers} from './users';
 import login from './login';
+import loggedin from './loggedin';
 
 console.log(getUsers());
+
+loggedin();
 
 document.getElementById('loginButton')!.addEventListener('click',function(){
     e.preventDefault();
